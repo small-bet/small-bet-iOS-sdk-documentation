@@ -1,0 +1,1471 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SBChallenge Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Small Bet SDK </a></h1>
+				<a id="developerHome" href="../index.html">Small Bet Ltd.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SBChallenge Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/amountInGBP">&nbsp;&nbsp;&nbsp;&nbsp;amountInGBP</option>
+	
+	<option value="//api/name/appName">&nbsp;&nbsp;&nbsp;&nbsp;appName</option>
+	
+	<option value="//api/name/canBeAccepted">&nbsp;&nbsp;&nbsp;&nbsp;canBeAccepted</option>
+	
+	<option value="//api/name/canBeRejected">&nbsp;&nbsp;&nbsp;&nbsp;canBeRejected</option>
+	
+	<option value="//api/name/canSubmitScore">&nbsp;&nbsp;&nbsp;&nbsp;canSubmitScore</option>
+	
+	<option value="//api/name/challengedPlayer">&nbsp;&nbsp;&nbsp;&nbsp;challengedPlayer</option>
+	
+	<option value="//api/name/challenger">&nbsp;&nbsp;&nbsp;&nbsp;challenger</option>
+	
+	<option value="//api/name/gameConfiguration">&nbsp;&nbsp;&nbsp;&nbsp;gameConfiguration</option>
+	
+	<option value="//api/name/identifier">&nbsp;&nbsp;&nbsp;&nbsp;identifier</option>
+	
+	<option value="//api/name/sharingItems">&nbsp;&nbsp;&nbsp;&nbsp;sharingItems</option>
+	
+	<option value="//api/name/status">&nbsp;&nbsp;&nbsp;&nbsp;status</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/allChallengesWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;+ allChallengesWithCompletion:</option>
+	
+	<option value="//api/name/challengeWithRequest:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ challengeWithRequest:completion:</option>
+	
+	<option value="//api/name/challengewithIdentifier:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ challengewithIdentifier:completion:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/acceptedChallengeWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- acceptedChallengeWithCompletion:</option>
+	
+	<option value="//api/name/rejectedChallengeWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- rejectedChallengeWithCompletion:</option>
+	
+	<option value="//api/name/shareByEmailToAddress:completion:">&nbsp;&nbsp;&nbsp;&nbsp;- shareByEmailToAddress:completion:</option>
+	
+	<option value="//api/name/submitScore:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- submitScore:withCompletion:</option>
+	
+	<option value="//api/name/updatedChallengeWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- updatedChallengeWithCompletion:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_getting challenge objects">getting challenge objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_sharing a challenge">sharing a challenge</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accepting and Rejecting a challenge">Accepting and Rejecting a challenge</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting an updated challenge">Getting an updated challenge</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Submitting a score to a challenge">Submitting a score to a challenge</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/amountInGBP">amountInGBP</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appName">appName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canBeAccepted">canBeAccepted</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canBeRejected">canBeRejected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/canSubmitScore">canSubmitScore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/challengedPlayer">challengedPlayer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/challenger">challenger</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameConfiguration">gameConfiguration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/identifier">identifier</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharingItems">sharingItems</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/status">status</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allChallengesWithCompletion:">allChallengesWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/challengeWithRequest:completion:">challengeWithRequest:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/challengewithIdentifier:completion:">challengewithIdentifier:completion:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptedChallengeWithCompletion:">acceptedChallengeWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rejectedChallengeWithCompletion:">rejectedChallengeWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shareByEmailToAddress:completion:">shareByEmailToAddress:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/submitScore:withCompletion:">submitScore:withCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updatedChallengeWithCompletion:">updatedChallengeWithCompletion:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SBChallenge Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SBChallenge Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SBChallenge.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The class representing a challenge on smallbet.</p>
+
+<p>You never create a challenge object directly. They are made for you and returned by the SDK. You can then query them for information for display to the user and perform a limited set of functions. Challenge objects may need to be retained by you for use in further API calls.</p>
+
+<p>Challenge objects are immutable. The contents of a challenge object does not change. When you want to do something with a challenge, like accpet a challenge on behalf of a user, you get a replacement challenge object in response. If you had a list of challenges in a mutableArray you could replace the old challenge object with the new one.</p>
+
+<p>Similar to <a href="../Classes/SBPlayer.html">SBPlayer</a>, not all properties are guaranteed to be filled in every time you recieve a challenge object. You should always test for the existance of a value before presenting any information from a challenge object to the user.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="getting challenge objects" name="task_getting challenge objects"></a>
+						<h3 class="subsubtitle task-title">getting challenge objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allChallengesWithCompletion:">+&nbsp;allChallengesWithCompletion:</a></code>
+		<span class="tooltip"><p>This method fetches the an array of all the users challenges.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/challengewithIdentifier:completion:">+&nbsp;challengewithIdentifier:completion:</a></code>
+		<span class="tooltip"><p>This method is the method used to fetch individual challenge objects from the smallbet API.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/challengeWithRequest:completion:">+&nbsp;challengeWithRequest:completion:</a></code>
+		<span class="tooltip"><p>This is the method to register a new challenge with the smallbet API</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Properties" name="task_Properties"></a>
+						<h3 class="subsubtitle task-title">Properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+		<span class="tooltip"><p>  the unique identifier small bet uses to identify this challenge</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/amountInGBP">&nbsp;&nbsp;amountInGBP</a></code>
+		<span class="tooltip"><p>the stake of the challenge in GBP.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
+		<span class="tooltip"><p>The status of a challenge in a human readable, localized form. This string indicates to the user the current state of their challenge<br/>
+If it is in their list but has no actions that can be performed upon it, like accept, reject or score submission, this string will describe why.<br/>
+Reasons can range from &ldquo;waiting for other player to accept&rdquo; to &ldquo;waiting for score from other player&rdquo;.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/challenger">&nbsp;&nbsp;challenger</a></code>
+		<span class="tooltip"><p>A player object with the details of the challenger. You can not compare this to the currentPlayer in the SBSmallBetManager to find out if they are the same player. It is up to the user to identify which party they are in a smallbet challenge.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/challengedPlayer">&nbsp;&nbsp;challengedPlayer</a></code>
+		<span class="tooltip"><p>A player object with the details of the challenged player. You can not compare this to the currentPlayer in the SBSmallBetManager to find out if they are the same player. It is up to the user to identify which party they are in a smallbet challenge.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appName">&nbsp;&nbsp;appName</a></code>
+		<span class="tooltip"><p>the name of your app as registered on the small bet API</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gameConfiguration">&nbsp;&nbsp;gameConfiguration</a></code>
+		<span class="tooltip"><p>This property represents some arbitrary NSData that you can use to send information about the challenge level/mode/game state between instanced of your app to enable you to have fair, fun challenges.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="sharing a challenge" name="task_sharing a challenge"></a>
+						<h3 class="subsubtitle task-title">sharing a challenge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharingItems">&nbsp;&nbsp;sharingItems</a></code>
+		<span class="tooltip"><p>This is the challenge sharing item. It is used to share information about the challenge.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shareByEmailToAddress:completion:">&ndash;&nbsp;shareByEmailToAddress:completion:</a></code>
+		<span class="tooltip"><p>This method shares the challenge by email. The email is sent by smallbet servers.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accepting and Rejecting a challenge" name="task_Accepting and Rejecting a challenge"></a>
+						<h3 class="subsubtitle task-title">Accepting and Rejecting a challenge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canBeAccepted">&nbsp;&nbsp;canBeAccepted</a></code>
+		<span class="tooltip"><p>property for determining whether the challenge is able to be accepted at this time.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canBeRejected">&nbsp;&nbsp;canBeRejected</a></code>
+		<span class="tooltip"><p>Property for determining if the challenge instance can be rejected at this time.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptedChallengeWithCompletion:">&ndash;&nbsp;acceptedChallengeWithCompletion:</a></code>
+		<span class="tooltip"><p>method to accept a challenge.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rejectedChallengeWithCompletion:">&ndash;&nbsp;rejectedChallengeWithCompletion:</a></code>
+		<span class="tooltip"><p>method to reject a challenge.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting an updated challenge" name="task_Getting an updated challenge"></a>
+						<h3 class="subsubtitle task-title">Getting an updated challenge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updatedChallengeWithCompletion:">&ndash;&nbsp;updatedChallengeWithCompletion:</a></code>
+		<span class="tooltip"><p>fetches the latest version of this challenge instance from the server</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Submitting a score to a challenge" name="task_Submitting a score to a challenge"></a>
+						<h3 class="subsubtitle task-title">Submitting a score to a challenge</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/canSubmitScore">&nbsp;&nbsp;canSubmitScore</a></code>
+		<span class="tooltip"><p>Property for determining if the challenge will accept score submissions at this time.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/submitScore:withCompletion:">&ndash;&nbsp;submitScore:withCompletion:</a></code>
+		<span class="tooltip"><p>Method to submit a score for a challenge. This method asynchronously submits a score for this challenge to the API.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/amountInGBP" title="amountInGBP"></a>
+	<h3 class="subsubtitle method-title">amountInGBP</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the stake of the challenge in GBP.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *amountInGBP</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the stake of the challenge in GBP.</p><p>the string is a single decimal in the form 3.20 and does not contain the currency symbol</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/appName" title="appName"></a>
+	<h3 class="subsubtitle method-title">appName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the name of your app as registered on the small bet API</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *appName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>the name of your app as registered on the small bet API</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/canBeAccepted" title="canBeAccepted"></a>
+	<h3 class="subsubtitle method-title">canBeAccepted</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>property for determining whether the challenge is able to be accepted at this time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL canBeAccepted</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>property for determining whether the challenge is able to be accepted at this time.</p><p>Use this property to determine which UI elements you should show for a challenge</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/canBeRejected" title="canBeRejected"></a>
+	<h3 class="subsubtitle method-title">canBeRejected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property for determining if the challenge instance can be rejected at this time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL canBeRejected</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property for determining if the challenge instance can be rejected at this time.</p><p>Use this property to determine which UI elements you should show when displaying the details challenge object to your users<br/>
+This is a companion to <a href="#//api/name/canBeAccepted">canBeAccepted</a> because if they challenge a random player they have the option to reject that challenge before they find out who the other player is. In this scenario reject is the only action available on the challenge.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/canSubmitScore" title="canSubmitScore"></a>
+	<h3 class="subsubtitle method-title">canSubmitScore</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Property for determining if the challenge will accept score submissions at this time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL canSubmitScore</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Property for determining if the challenge will accept score submissions at this time.</p><p>Use this property to determine what controls it is suitable to show for a challenge.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/challengedPlayer" title="challengedPlayer"></a>
+	<h3 class="subsubtitle method-title">challengedPlayer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A player object with the details of the challenged player. You can not compare this to the currentPlayer in the SBSmallBetManager to find out if they are the same player. It is up to the user to identify which party they are in a smallbet challenge.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) SBPlayer *challengedPlayer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A player object with the details of the challenged player. You can not compare this to the currentPlayer in the SBSmallBetManager to find out if they are the same player. It is up to the user to identify which party they are in a smallbet challenge.</p>
+
+<p>This property will be nil if the challenge is an open challenge. In an open challenge the player is given a URL to share with their friends and the first user to visit the URL and claim the challenge becomes the challenged player.</p>
+
+<p>If there is no challenged player it is safe to assume that the currentPlayer is the <a href="#//api/name/challenger">challenger</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/challenger" title="challenger"></a>
+	<h3 class="subsubtitle method-title">challenger</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A player object with the details of the challenger. You can not compare this to the currentPlayer in the SBSmallBetManager to find out if they are the same player. It is up to the user to identify which party they are in a smallbet challenge.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) SBPlayer *challenger</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A player object with the details of the challenger. You can not compare this to the currentPlayer in the SBSmallBetManager to find out if they are the same player. It is up to the user to identify which party they are in a smallbet challenge.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gameConfiguration" title="gameConfiguration"></a>
+	<h3 class="subsubtitle method-title">gameConfiguration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property represents some arbitrary NSData that you can use to send information about the challenge level/mode/game state between instanced of your app to enable you to have fair, fun challenges.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSData *gameConfiguration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property represents some arbitrary NSData that you can use to send information about the challenge level/mode/game state between instanced of your app to enable you to have fair, fun challenges.</p>
+
+<p>@discussion<br/>
+There is a size limit of 64KB on this property.</p>
+
+<p>Interesting ways you can use this property are:<br/>
+NSData * data = [NSKeyedArchiver archivedDataWithRootObject:gameState];</p>
+
+<p>&ndash;or&ndash;</p>
+
+<p>NSData * data = [NSPropertyListSerialisation<br/>
+                  dataWithPropertyList:gameStateDictionary <br/>
+                                format:NSPropertyListBinaryFormat_v1_0<br/>
+                               options:0 <br/>
+                                 error:&amp;error];</p>
+
+<p>The property list serialisation is more space efficient than keyed archiving. Either way check your data.length to see what size it is before making an <a href="../Classes/SBChallengeRequest.html">SBChallengeRequest</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/identifier" title="identifier"></a>
+	<h3 class="subsubtitle method-title">identifier</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  the unique identifier small bet uses to identify this challenge</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *identifier</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  the unique identifier small bet uses to identify this challenge</p>
+
+<p>you can store these identifiers and then recall individual challenges later if it would make sense to do so. Fetching the challenge fresh using the identifier is also the only way to find out if a challenge state is updated. The challenge objects are not modified once they are created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sharingItems" title="sharingItems"></a>
+	<h3 class="subsubtitle method-title">sharingItems</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the challenge sharing item. It is used to share information about the challenge.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSArray *sharingItems</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the challenge sharing item. It is used to share information about the challenge.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="subsubtitle method-title">status</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The status of a challenge in a human readable, localized form. This string indicates to the user the current state of their challenge<br/>
+If it is in their list but has no actions that can be performed upon it, like accept, reject or score submission, this string will describe why.<br/>
+Reasons can range from &ldquo;waiting for other player to accept&rdquo; to &ldquo;waiting for score from other player&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly) NSString *status</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The status of a challenge in a human readable, localized form. This string indicates to the user the current state of their challenge<br/>
+If it is in their list but has no actions that can be performed upon it, like accept, reject or score submission, this string will describe why.<br/>
+Reasons can range from &ldquo;waiting for other player to accept&rdquo; to &ldquo;waiting for score from other player&rdquo;.</p><p>you can use this in your App to communicate with the user what needs to be done to progress with the challenge.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allChallengesWithCompletion:" title="allChallengesWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">allChallengesWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method fetches the an array of all the users challenges.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)allChallengesWithCompletion:(void ( ^ ) ( NSArray *challenges , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>A completion block that returns nil and is run when the response from the API has been processed. It has two arguements: challenges, the array of SBChallenge objects returned from the server and error, the error that occurred (if any). Either challenges or error will be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method fetches the an array of all the users challenges.</p><p>The array of challenges is returned in date descending order. (IE newest challenges at the beginning) You can rely on this ordering.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/challengeWithRequest:completion:" title="challengeWithRequest:completion:"></a>
+	<h3 class="subsubtitle method-title">challengeWithRequest:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the method to register a new challenge with the smallbet API</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)challengeWithRequest:(SBChallengeRequest *)<em>request</em> completion:(void ( ^ ) ( SBChallenge *challenge , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>a challenge request object suitably filled in</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>a block which is exeuted on response by the API. It has two arguements. One of the arguements will always be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the method to register a new challenge with the smallbet API</p><p>The challenge arguement in the block here is handy to keep around for placing in a <a href="../Classes/SBChallengeShareViewController.html">SBChallengeShareViewController</a>.</p>
+
+<p>The block may be called immeadiately if the <a href="#//api/name/gameConfiguration">gameConfiguration</a> is over the 64KB size limit</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/challengewithIdentifier:completion:" title="challengewithIdentifier:completion:"></a>
+	<h3 class="subsubtitle method-title">challengewithIdentifier:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is the method used to fetch individual challenge objects from the smallbet API.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)challengewithIdentifier:(NSString *)<em>identifier</em> completion:(void ( ^ ) ( SBChallenge *challenge , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>identifier</em></dt>
+			<dd><p>the <a href="#//api/name/identifier">identifier</a> of the challenge you want to fetch</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>A completion block executed once the response has been recieved by the API. It has two arguements. The challenge object recieved and an error. One of the arguements will always be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is the method used to fetch individual challenge objects from the smallbet API.</p><p>If you want to persist challenge objects across launches it is best to store challenge identifiers and to fetch them as they are needed using this method. This ensures that challenge objects are always up to date with the objects stored on the server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/acceptedChallengeWithCompletion:" title="acceptedChallengeWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">acceptedChallengeWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>method to accept a challenge.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)acceptedChallengeWithCompletion:(void ( ^ ) ( SBChallenge *acceptedChallenge , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>a completion block that returns nothing and takes a challenge and error arguement</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>method to accept a challenge.</p><p>The block may be fired straight away if the canBeAccepted: is NO</p>
+
+<p>You may get the SBErrorActionNotAvailable error from the API if the action became<br/>
+unavailable in the time the object was fetched and the time the accept action was sent.<br/>
+In these cases the challenges available actions will update and you should update your UI<br/>
+as needed to handle the error.</p>
+
+<p>If this request completes successfully the challenge arguement of the block will contain a new challenge object to replace the old one with.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rejectedChallengeWithCompletion:" title="rejectedChallengeWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">rejectedChallengeWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>method to reject a challenge.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)rejectedChallengeWithCompletion:(void ( ^ ) ( SBChallenge *rejectedChallenge , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>a completion block that returns nothing and takes an error arguement</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>method to reject a challenge.</p><p>The block may be fired straight away if canBeRejected: is NO</p>
+
+<p>You may get the SBErrorActionNotAvailable error from the API if the action became<br/>
+unavailable in the time the object was fetched and the time the accept action was sent.<br/>
+In these cases the challenges available actions will update and you should update your UI<br/>
+as needed to handle the error.</p>
+
+<p>  If this request completes successfully the challenge arguement of the block will contain a new challenge object to replace the old one with.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shareByEmailToAddress:completion:" title="shareByEmailToAddress:completion:"></a>
+	<h3 class="subsubtitle method-title">shareByEmailToAddress:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method shares the challenge by email. The email is sent by smallbet servers.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)shareByEmailToAddress:(NSString *)<em>emailAddress</em> completion:(void ( ^ ) ( NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method shares the challenge by email. The email is sent by smallbet servers.</p><p>this option is only available on open challenges</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/submitScore:withCompletion:" title="submitScore:withCompletion:"></a>
+	<h3 class="subsubtitle method-title">submitScore:withCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Method to submit a score for a challenge. This method asynchronously submits a score for this challenge to the API.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)submitScore:(NSInteger)<em>score</em> withCompletion:(void ( ^ ) ( SBChallenge *updtedChallenge , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>score</em></dt>
+			<dd><p>The score the user attained in your game represented as an NSInteger.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>A block that is executed on completion. It returns nothing and takes two arguements, A new challenge object that replaces the old one and an error. One of the arguements will always be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Method to submit a score for a challenge. This method asynchronously submits a score for this challenge to the API.</p><p>It is reccommended you boil down any factors you use to score the player into one number which we then submit to the API. Once the score is submitted it is not accessible again at any point.<br/>
+The small-bet API will decide the winner by picking the player with the highest score.<br/>
+If you want to indicate to a user how they did in a particular challenge it is best to store the original socring metrics in a dictionary with the challenge <a href="#//api/name/identifier">identifier</a> as the key.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updatedChallengeWithCompletion:" title="updatedChallengeWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">updatedChallengeWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>fetches the latest version of this challenge instance from the server</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updatedChallengeWithCompletion:(void ( ^ ) ( SBChallenge *updatedChallenge , NSError *error ))<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>completion a completion block that returns nothing and takes a challenge and error arguement</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>fetches the latest version of this challenge instance from the server</p><p>This method is simply a convenience method for calling +challengeWithIdentifier:completion: with<br/>
+the <a href="#//api/name/identifier">identifier</a> of this challenge instance. It is here for sake of clarity and providing an obvious way to<br/>
+get updated versions of your challenges.</p>
+
+<p>sometimes you will find your challenge object has gotten out of sync with the server, say if the user has gone away<br/>
+leaving a challenge on the screen and come back to your app later. Sometimes you may try to perform an action<br/>
+with a challenge such as accepting or rejecting a challenge and you may get a non network based error. In these cases you should<br/>
+get an updated challenge from the server</p>
+
+<p>If you are displaying the details of a challenge to a player when your app is suspended upon recieveing UIApplicationDidBecomeActiveNotification you should<br/>
+refresh your visible challenge with this method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBChallenge.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Small Bet Ltd.. All rights reserved. (Last updated: 2013-06-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

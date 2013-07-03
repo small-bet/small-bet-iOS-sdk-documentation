@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SBSmallbetManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Small Bet SDK </a></h1>
+				<a id="developerHome" href="../index.html">Small Bet Ltd.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SBSmallbetManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/appKey">&nbsp;&nbsp;&nbsp;&nbsp;appKey</option>
+	
+	<option value="//api/name/currentPlayer">&nbsp;&nbsp;&nbsp;&nbsp;currentPlayer</option>
+	
+	<option value="//api/name/pushNotificationManager">&nbsp;&nbsp;&nbsp;&nbsp;pushNotificationManager</option>
+	
+	<option value="//api/name/shouldPollAPIForChallengeUpdates">&nbsp;&nbsp;&nbsp;&nbsp;shouldPollAPIForChallengeUpdates</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/defaultManager">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultManager</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/application:openURL:sourceApplication:annotation:">&nbsp;&nbsp;&nbsp;&nbsp;- application:openURL:sourceApplication:annotation:</option>
+	
+	<option value="//api/name/logoutCurrentPlayer">&nbsp;&nbsp;&nbsp;&nbsp;- logoutCurrentPlayer</option>
+	
+	<option value="//api/name/setSandboxKey:andProductionKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setSandboxKey:andProductionKey:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting the small bet manager">Getting the small bet manager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing App Keys">Managing App Keys</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Login and logout">Login and logout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Getting Notified when challenges update">Getting Notified when challenges update</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Handling app launch with smallbet URLs">Handling app launch with smallbet URLs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Push Notifications">Push Notifications</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appKey">appKey</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentPlayer">currentPlayer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pushNotificationManager">pushNotificationManager</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldPollAPIForChallengeUpdates">shouldPollAPIForChallengeUpdates</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultManager">defaultManager</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/application:openURL:sourceApplication:annotation:">application:openURL:sourceApplication:annotation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logoutCurrentPlayer">logoutCurrentPlayer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSandboxKey:andProductionKey:">setSandboxKey:andProductionKey:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SBSmallbetManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SBSmallbetManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SBSmallbetManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Getting the small bet manager" name="task_Getting the small bet manager"></a>
+						<h3 class="subsubtitle task-title">Getting the small bet manager</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultManager">+&nbsp;defaultManager</a></code>
+		<span class="tooltip"><p>The smallbet manager isnt a strict singleton, but it is best to use the one provided by this method as it will be the one with your app keys stored. Its also the manager used by all the other small-bet classes.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing App Keys" name="task_Managing App Keys"></a>
+						<h3 class="subsubtitle task-title">Managing App Keys</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appKey">&nbsp;&nbsp;appKey</a></code>
+		<span class="tooltip"><p>String containing the correct App key for either production or development environemnt.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSandboxKey:andProductionKey:">&ndash;&nbsp;setSandboxKey:andProductionKey:</a></code>
+		<span class="tooltip"><p>This method should be called in application:didFinishLaunchingWithOptions: by your application to set the app keys for both envoironments.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Login and logout" name="task_Login and logout"></a>
+						<h3 class="subsubtitle task-title">Login and logout</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentPlayer">&nbsp;&nbsp;currentPlayer</a></code>
+		<span class="tooltip"><p>The currently logged in player.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/logoutCurrentPlayer">&ndash;&nbsp;logoutCurrentPlayer</a></code>
+		<span class="tooltip"><p>logs out the current player. Sets <a href="#//api/name/currentPlayer">currentPlayer</a> to nil</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Getting Notified when challenges update" name="task_Getting Notified when challenges update"></a>
+						<h3 class="subsubtitle task-title">Getting Notified when challenges update</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldPollAPIForChallengeUpdates">&nbsp;&nbsp;shouldPollAPIForChallengeUpdates</a></code>
+		<span class="tooltip"><p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Handling app launch with smallbet URLs" name="task_Handling app launch with smallbet URLs"></a>
+						<h3 class="subsubtitle task-title">Handling app launch with smallbet URLs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/application:openURL:sourceApplication:annotation:">&ndash;&nbsp;application:openURL:sourceApplication:annotation:</a></code>
+		<span class="tooltip"><p>Asks the Small Bet Manager to open a resource identified by a URL</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Push Notifications" name="task_Push Notifications"></a>
+						<h3 class="subsubtitle task-title">Push Notifications</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pushNotificationManager">&nbsp;&nbsp;pushNotificationManager</a></code>
+		<span class="tooltip"><p>The notification manager for managing push notificaitons. This is an API in progress and currently does nothing.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/appKey" title="appKey"></a>
+	<h3 class="subsubtitle method-title">appKey</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>String containing the correct App key for either production or development environemnt.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *appKey</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>String containing the correct App key for either production or development environemnt.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentPlayer" title="currentPlayer"></a>
+	<h3 class="subsubtitle method-title">currentPlayer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The currently logged in player.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) SBPlayer *currentPlayer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The currently logged in player.</p><p>This player object will always have the player nickname filled in, so you can greet your player.</p>
+
+<p>This object is designed to indicate whether a player is logged in at all and it is stored here for methods that require the current player</p>
+
+<p>You can not log the player in yourself. You must present the <a href="../Classes/SBLoginViewController.html">SBLoginViewController</a> to log the user in.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pushNotificationManager" title="pushNotificationManager"></a>
+	<h3 class="subsubtitle method-title">pushNotificationManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The notification manager for managing push notificaitons. This is an API in progress and currently does nothing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) SBPushNotificationManager *pushNotificationManager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The notification manager for managing push notificaitons. This is an API in progress and currently does nothing.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldPollAPIForChallengeUpdates" title="shouldPollAPIForChallengeUpdates"></a>
+	<h3 class="subsubtitle method-title">shouldPollAPIForChallengeUpdates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL shouldPollAPIForChallengeUpdates</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;</p><p>Polling occurs at an interval we define on a background thread. IF a change is detected to a challenge then notifications will be sent using the NSNotificationCenter to tell you about it. this allows you to watch for challenges changing and refresh your user interfaces as needed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultManager" title="defaultManager"></a>
+	<h3 class="subsubtitle method-title">defaultManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The smallbet manager isnt a strict singleton, but it is best to use the one provided by this method as it will be the one with your app keys stored. Its also the manager used by all the other small-bet classes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)defaultManager</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>common small bet manager</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The smallbet manager isnt a strict singleton, but it is best to use the one provided by this method as it will be the one with your app keys stored. Its also the manager used by all the other small-bet classes.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/application:openURL:sourceApplication:annotation:" title="application:openURL:sourceApplication:annotation:"></a>
+	<h3 class="subsubtitle method-title">application:openURL:sourceApplication:annotation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Asks the Small Bet Manager to open a resource identified by a URL</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)application:(UIApplication *)<em>application</em> openURL:(NSURL *)<em>url</em> sourceApplication:(NSString *)<em>sourceApplication</em> annotation:(id)<em>annotation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>application</em></dt>
+			<dd><p>The Application Object</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>A object representing a URL (Universal Resource Locator).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sourceApplication</em></dt>
+			<dd><p>The bundle ID of the application that is requesting your application to open the URL (url).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>annotation</em></dt>
+			<dd><p>A property-list object supplied by the source application to communicate information to the receiving application.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES if the Small Bet Manager successfully handled the request; NO if the attempt to open the URL resource failed. If the smallbet manager returns NO you should do your best to handle the opening of the URL (as its probably yours!)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Asks the Small Bet Manager to open a resource identified by a URL</p><p>This method is provided to support launching of your app via URLs from smallbet. You gave us a URL scheme for your app when you registered it. User activity on the small bet website may result in the user launching your app directly using that URL scheme. In those cases the small bet service will attempt to pass your application more information about what the user was doing on small bet to help make the transition seamless.</p>
+
+<p>Call this method from the same method in your app delegate to give the SBSmallbetManager a chance to handle the smallbet URL. IF the url is from smallbet the SBSmallbetManager will post NSNotifications about their content using Smallbet SDK objects. Listen out for these notifications to react to app launches from smallbet URLs gracefully.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logoutCurrentPlayer" title="logoutCurrentPlayer"></a>
+	<h3 class="subsubtitle method-title">logoutCurrentPlayer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>logs out the current player. Sets <a href="#//api/name/currentPlayer">currentPlayer</a> to nil</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)logoutCurrentPlayer</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>logs out the current player. Sets <a href="#//api/name/currentPlayer">currentPlayer</a> to nil</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSandboxKey:andProductionKey:" title="setSandboxKey:andProductionKey:"></a>
+	<h3 class="subsubtitle method-title">setSandboxKey:andProductionKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method should be called in application:didFinishLaunchingWithOptions: by your application to set the app keys for both envoironments.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSandboxKey:(NSString *)<em>sandboxKey</em> andProductionKey:(NSString *)<em>productionKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sandboxKey</em></dt>
+			<dd><p>the sandbox key from smallbet</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>productionKey</em></dt>
+			<dd><p>the production key from smallbet. This value is optional as you might not have one yet. Pass nil if you dont have a production key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method should be called in application:didFinishLaunchingWithOptions: by your application to set the app keys for both envoironments.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SBSmallbetManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Small Bet Ltd.. All rights reserved. (Last updated: 2013-06-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
