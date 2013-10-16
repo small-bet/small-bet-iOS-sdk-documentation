@@ -6,13 +6,13 @@
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Small Bet SDK </a></h1>
-				<a id="developerHome" href="../index.html">Small Bet Ltd.</a>
+				<h1><a id="libraryTitle" href="../index.html">Small-Bet SDK </a></h1>
+				<a id="developerHome" href="../index.html">Small-Bet Ltd.</a>
 			</div>
 			
 			<div id="title" role="banner">
@@ -47,7 +47,7 @@
 	
 	<option value="//api/name/challengedPlayer">&nbsp;&nbsp;&nbsp;&nbsp;challengedPlayer</option>
 	
-	<option value="//api/name/descrptionString">&nbsp;&nbsp;&nbsp;&nbsp;descrptionString</option>
+	<option value="//api/name/descriptionString">&nbsp;&nbsp;&nbsp;&nbsp;descriptionString</option>
 	
 	<option value="//api/name/downloadAppActionString">&nbsp;&nbsp;&nbsp;&nbsp;downloadAppActionString</option>
 	
@@ -89,7 +89,7 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/challengedPlayer">challengedPlayer</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/descrptionString">descrptionString</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/descriptionString">descriptionString</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/downloadAppActionString">downloadAppActionString</a></span></li>
 	
@@ -133,8 +133,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
@@ -164,49 +164,42 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/challengedPlayer">&nbsp;&nbsp;challengedPlayer</a></code>
-		<span class="tooltip"><p>this is the challenged player object representing the challenged player on smallbet (if there is one, may be nil)</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/descrptionString">&nbsp;&nbsp;descrptionString</a></code>
-		<span class="tooltip"><p>a description of what the user is sharing</p></span>
+		<code><a href="#//api/name/descriptionString">&nbsp;&nbsp;descriptionString</a></code>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/downloadAppActionString">&nbsp;&nbsp;downloadAppActionString</a></code>
-		<span class="tooltip"><p>a descriptive string describing how the user downloads the app</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/viewChallengeActionString">&nbsp;&nbsp;viewChallengeActionString</a></code>
-		<span class="tooltip"><p>a desciptive string about what the user needs to do to see the challenge</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/appStoreURL">&nbsp;&nbsp;appStoreURL</a></code>
-		<span class="tooltip"><p>A URL to this app in the apple app store</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/challengeURL">&nbsp;&nbsp;challengeURL</a></code>
-		<span class="tooltip"><p>A URL to see this challenge on the web</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/appSpecificURL">&nbsp;&nbsp;appSpecificURL</a></code>
-		<span class="tooltip"><p>A URL to open this challenge in the other players app (assuming they have this app)</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -353,7 +346,9 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>this is the challenged player object representing the challenged player on smallbet (if there is one, may be nil)</p>
+		<p>this is the challenged player object representing the challenged player on smallbet (if there is one, may be nil)
+@discussion If the challenge is newly created this object will contain the phone number / email address of the
+person the player intended to challenge even if the challenge created is an open challenge. The idea is this will help you pre-fill who the sharing messages should be addressed to.</p>
 	</div>		
 	
     
@@ -370,9 +365,9 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>this is the challenged player object representing the challenged player on smallbet (if there is one, may be nil)</p><p>If the challenge is newly created this object will contain the phone number / email address of the<br/>
-person the player intended to challenge even if the challenge created is an open challenge. The idea is this will help you pre-fill who the sharing messages should be addressed to.</p><blockquote><p>%warning%<br/>
-<strong>Warning:</strong> <em>Important:</em> do not use this property as a test for an open challenge. Check the challenge itself.</p></blockquote>
+		<p>this is the challenged player object representing the challenged player on smallbet (if there is one, may be nil)
+@discussion If the challenge is newly created this object will contain the phone number / email address of the
+person the player intended to challenge even if the challenge created is an open challenge. The idea is this will help you pre-fill who the sharing messages should be addressed to.</p><div class="warning"><p><strong>Warning:</strong> <em>Important:</em> do not use this property as a test for an open challenge. Check the challenge itself.</p></div>
 	</div>
 	
 	
@@ -390,8 +385,8 @@ person the player intended to challenge even if the challenge created is an open
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/descrptionString" title="descrptionString"></a>
-	<h3 class="subsubtitle method-title">descrptionString</h3>
+	<a name="//api/name/descriptionString" title="descriptionString"></a>
+	<h3 class="subsubtitle method-title">descriptionString</h3>
 	
 	
 	
@@ -401,7 +396,7 @@ person the player intended to challenge even if the challenge created is an open
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *descrptionString</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *descriptionString</code></div>
 
     
 	
@@ -519,6 +514,8 @@ person the player intended to challenge even if the challenge created is an open
 					
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -529,9 +526,9 @@ person the player intended to challenge even if the challenge created is an open
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Small Bet Ltd.. All rights reserved. (Last updated: 2013-06-25)</span><br />
+						<p><span class="copyright">&copy; 2013 Small-Bet Ltd.. All rights reserved. (Last updated: 2013-10-16)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>

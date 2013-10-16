@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>SBChallengeRequest Class Reference</title>
+		<title>SBHypermediaObject Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">SBChallengeRequest Class Reference</h1>
+				<h1 class="hideInXcode">SBHypermediaObject Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -25,8 +25,6 @@
 				<li id="jumpto_button" role="navigation">
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
-	
-	<option value="overview">Overview</option>
 	
 	
 	
@@ -37,17 +35,13 @@
 	
 	
 	
-	<option value="properties">Properties</option>
-	
-	<option value="//api/name/amountInGBP">&nbsp;&nbsp;&nbsp;&nbsp;amountInGBP</option>
-	
-	<option value="//api/name/challengedPlayer">&nbsp;&nbsp;&nbsp;&nbsp;challengedPlayer</option>
-	
-	<option value="//api/name/gameConfiguration">&nbsp;&nbsp;&nbsp;&nbsp;gameConfiguration</option>
 	
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:</option>
 	
 	
 	
@@ -58,8 +52,6 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
-
 
 
 
@@ -71,26 +63,22 @@
 
 
 
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/amountInGBP">amountInGBP</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/challengedPlayer">challengedPlayer</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gameConfiguration">gameConfiguration</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:">initWithDictionary:</a></span></li>
 	
 </ul></li>
-
-
-
-
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="SBChallengeRequest Class Reference" name="top"></a>
+				<a title="SBHypermediaObject Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -99,7 +87,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">SBChallengeRequest Class Reference</h1>
+						<h1 class="title title-header">SBHypermediaObject Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -110,20 +98,12 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">SBChallengeRequest.h</td>
+	<td class="specification-value">SBHypermediaObject.h</td>
 </tr>
 						</tbody></table></div>
 					
                     
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This class is used to create a challenge. It acts as a container for the aspects of a challenge you can control. When filled in and passed to SBChallenge&rsquo;s challengeWithRequest:completion: method it will facilitate the registration of a challenge to your configuration.</p>
-					</div>
-					
-					
 					
 					
 					
@@ -138,21 +118,9 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/amountInGBP">&nbsp;&nbsp;amountInGBP</a></code>
+		<code><a href="#//api/name/initWithDictionary:">&ndash;&nbsp;initWithDictionary:</a></code>
 	</span>
-	<span class="task-item-suffix">property</span>
 	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/gameConfiguration">&nbsp;&nbsp;gameConfiguration</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/challengedPlayer">&nbsp;&nbsp;challengedPlayer</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
 	
 </li>
 						</ul>
@@ -163,25 +131,27 @@
 					
 					
 					
+					
+					
+					
+					
 					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/amountInGBP" title="amountInGBP"></a>
-	<h3 class="subsubtitle method-title">amountInGBP</h3>
+	<a name="//api/name/initWithDictionary:" title="initWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>the amount the user wishes to bet in this challenge
-@discussion If you dont supply this the server will return an error when you attempt to create a challenge with this challengeRequest
-The string should be of the format: 1.20 without the currency symbol</p>
+		<p>designated initializer</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *amountInGBP</code></div>
+	<div class="method-subsection method-declaration"><code>- (instancetype)initWithDictionary:(NSDictionary *)<em>otherDictionary</em></code></div>
 
     
 	
@@ -193,9 +163,7 @@ The string should be of the format: 1.20 without the currency symbol</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>the amount the user wishes to bet in this challenge
-@discussion If you dont supply this the server will return an error when you attempt to create a challenge with this challengeRequest
-The string should be of the format: 1.20 without the currency symbol</p>
+		<p>designated initializer</p>
 	</div>
 	
 	
@@ -206,99 +174,13 @@ The string should be of the format: 1.20 without the currency symbol</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">SBChallengeRequest.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/challengedPlayer" title="challengedPlayer"></a>
-	<h3 class="subsubtitle method-title">challengedPlayer</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The player who the user wishes to challenge. Ususally this object will be the result from a <a href="../Classes/SBPlayerPickerViewController.html">SBPlayerPickerViewController</a>.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) SBPlayer *challengedPlayer</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The player who the user wishes to challenge. Ususally this object will be the result from a <a href="../Classes/SBPlayerPickerViewController.html">SBPlayerPickerViewController</a>.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">SBChallengeRequest.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/gameConfiguration" title="gameConfiguration"></a>
-	<h3 class="subsubtitle method-title">gameConfiguration</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>an arbitrary NSData object containing state for your game. We take care of storing this data. It will be available in all instances of this challenge for both players so you can set up both clients to have the same challenge environment, select a game or scoring mode and even attach a shared challenge message. Size limit of 64kb. Please see the documentation on <a href="../Classes/SBChallenge.html">SBChallenge</a> for more information on how you can use this property</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSData *gameConfiguration</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>an arbitrary NSData object containing state for your game. We take care of storing this data. It will be available in all instances of this challenge for both players so you can set up both clients to have the same challenge environment, select a game or scoring mode and even attach a shared challenge message. Size limit of 64kb. Please see the documentation on <a href="../Classes/SBChallenge.html">SBChallenge</a> for more information on how you can use this property</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">SBChallengeRequest.h</code><br />
+		<code class="declared-in-ref">SBHypermediaObject.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
-					
-					
-					
-					
 					
 					
                     

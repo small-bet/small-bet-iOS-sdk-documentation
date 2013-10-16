@@ -6,13 +6,13 @@
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.1 (build 858)" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
 	</head>
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Small Bet SDK </a></h1>
-				<a id="developerHome" href="../index.html">Small Bet Ltd.</a>
+				<h1><a id="libraryTitle" href="../index.html">Small-Bet SDK </a></h1>
+				<a id="developerHome" href="../index.html">Small-Bet Ltd.</a>
 			</div>
 			
 			<div id="title" role="banner">
@@ -156,8 +156,8 @@
 </tr>
 						</tbody></table></div>
 					
-					
-					
+                    
+                    
 					
 					
 					
@@ -173,7 +173,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/defaultManager">+&nbsp;defaultManager</a></code>
-		<span class="tooltip"><p>The smallbet manager isnt a strict singleton, but it is best to use the one provided by this method as it will be the one with your app keys stored. Its also the manager used by all the other small-bet classes.</p></span>
 	</span>
 	
 	
@@ -188,14 +187,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/appKey">&nbsp;&nbsp;appKey</a></code>
-		<span class="tooltip"><p>String containing the correct App key for either production or development environemnt.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/setSandboxKey:andProductionKey:">&ndash;&nbsp;setSandboxKey:andProductionKey:</a></code>
-		<span class="tooltip"><p>This method should be called in application:didFinishLaunchingWithOptions: by your application to set the app keys for both envoironments.</p></span>
 	</span>
 	
 	
@@ -210,14 +207,12 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/currentPlayer">&nbsp;&nbsp;currentPlayer</a></code>
-		<span class="tooltip"><p>The currently logged in player.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/logoutCurrentPlayer">&ndash;&nbsp;logoutCurrentPlayer</a></code>
-		<span class="tooltip"><p>logs out the current player. Sets <a href="#//api/name/currentPlayer">currentPlayer</a> to nil</p></span>
 	</span>
 	
 	
@@ -232,7 +227,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/shouldPollAPIForChallengeUpdates">&nbsp;&nbsp;shouldPollAPIForChallengeUpdates</a></code>
-		<span class="tooltip"><p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -247,7 +241,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/application:openURL:sourceApplication:annotation:">&ndash;&nbsp;application:openURL:sourceApplication:annotation:</a></code>
-		<span class="tooltip"><p>Asks the Small Bet Manager to open a resource identified by a URL</p></span>
 	</span>
 	
 	
@@ -262,7 +255,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/pushNotificationManager">&nbsp;&nbsp;pushNotificationManager</a></code>
-		<span class="tooltip"><p>The notification manager for managing push notificaitons. This is an API in progress and currently does nothing.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -327,7 +319,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>The currently logged in player.</p>
+		<p>The currently logged in player.
+@discussion This player object will always have the player nickname filled in, so you can greet your player.</p>
 	</div>		
 	
     
@@ -344,7 +337,8 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>The currently logged in player.</p><p>This player object will always have the player nickname filled in, so you can greet your player.</p>
+		<p>The currently logged in player.
+@discussion This player object will always have the player nickname filled in, so you can greet your player.</p>
 
 <p>This object is designed to indicate whether a player is logged in at all and it is stored here for methods that require the current player</p>
 
@@ -413,7 +407,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;</p>
+		<p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;
+@discussion Polling occurs at an interval we define on a background thread. IF a change is detected to a challenge then notifications will be sent using the NSNotificationCenter to tell you about it. this allows you to watch for challenges changing and refresh your user interfaces as needed.</p>
 	</div>		
 	
     
@@ -430,7 +425,8 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;</p><p>Polling occurs at an interval we define on a background thread. IF a change is detected to a challenge then notifications will be sent using the NSNotificationCenter to tell you about it. this allows you to watch for challenges changing and refresh your user interfaces as needed.</p>
+		<p>switch to turn on and off the polling of the API for updates to the <a href="#//api/name/currentPlayer">currentPlayer</a> s challenges. defaults to YES;
+@discussion Polling occurs at an interval we define on a background thread. IF a change is detected to a challenge then notifications will be sent using the NSNotificationCenter to tell you about it. this allows you to watch for challenges changing and refresh your user interfaces as needed.</p>
 	</div>
 	
 	
@@ -555,6 +551,10 @@
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
 		<p>YES if the Small Bet Manager successfully handled the request; NO if the attempt to open the URL resource failed. If the smallbet manager returns NO you should do your best to handle the opening of the URL (as its probably yours!)</p>
+
+<p>@discussion This method is provided to support launching of your app via URLs from smallbet. You gave us a URL scheme for your app when you registered it. User activity on the small bet website may result in the user launching your app directly using that URL scheme. In those cases the small bet service will attempt to pass your application more information about what the user was doing on small bet to help make the transition seamless.</p>
+
+<p>Call this method from the same method in your app delegate to give the SBSmallbetManager a chance to handle the smallbet URL. IF the url is from smallbet the SBSmallbetManager will post NSNotifications about their content using Smallbet SDK objects. Listen out for these notifications to react to app launches from smallbet URLs gracefully.</p>
 	</div>
 	
 	
@@ -563,9 +563,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Asks the Small Bet Manager to open a resource identified by a URL</p><p>This method is provided to support launching of your app via URLs from smallbet. You gave us a URL scheme for your app when you registered it. User activity on the small bet website may result in the user launching your app directly using that URL scheme. In those cases the small bet service will attempt to pass your application more information about what the user was doing on small bet to help make the transition seamless.</p>
-
-<p>Call this method from the same method in your app delegate to give the SBSmallbetManager a chance to handle the smallbet URL. IF the url is from smallbet the SBSmallbetManager will post NSNotifications about their content using Smallbet SDK objects. Listen out for these notifications to react to app launches from smallbet URLs gracefully.</p>
+		<p>Asks the Small Bet Manager to open a resource identified by a URL</p>
 	</div>
 	
 	
@@ -682,6 +680,8 @@
 					</div>
 					
 					
+                    
+                    
 				</div>
 				<div class="main-navigation navigation-bottom">
 					<ul>
@@ -692,9 +692,9 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Small Bet Ltd.. All rights reserved. (Last updated: 2013-06-25)</span><br />
+						<p><span class="copyright">&copy; 2013 Small-Bet Ltd.. All rights reserved. (Last updated: 2013-10-16)</span><br />
 						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
 						
 					</div>
 				</div>
